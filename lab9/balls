@@ -62,7 +62,7 @@ class Ball:
                 self.y = 499
 
             if self.live < 0:
-                del self
+                balls.pop(balls.index(self))
             else:
                 self.live -= 1
 
